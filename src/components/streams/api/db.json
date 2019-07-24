@@ -1,1 +1,25 @@
-{ "streams": [] }
+{
+  "streams": [
+    {
+      "title": "Witcher 3 stream",
+      "description": "Come and join Geralt in a final attempt to defeat Vilgefortz",
+      "id": 1
+    },
+    {
+      "title": "Learning Java stream",
+      "description": "Time for some Spring Boot",
+      "id": 2
+    },
+    {
+      "title": "Cooking stream",
+      "description": "Making a genuine Palermo lasagna",
+      "id": 3
+    },
+    {
+      "title": "Cartoons stream",
+      "description": "Bugs bunny and all the loony tunes you can swallow",
+      "userId": "115859590794203743556",
+      "id": 4
+    }
+  ]
+}
