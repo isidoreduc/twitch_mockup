@@ -1,4 +1,5 @@
 import axios from 'axios';
+import history from '../history';
 
 export const signIn = userId => {
   return { type: 'SIGN_IN', payload: userId };
@@ -12,6 +13,7 @@ export const createStream = formUserInput => async (dispatch, getState) => {
   const { userId } = getState().auth;
   const response = await axios.post('http://localhost:3001/streams', { ...formUserInput, userId });
   dispatch({ type: 'CREATE_STREAM', payload: response.data });
+  history.push('/');
 };
 
 export const fetchStreams = () => async dispatch => {
