@@ -26,9 +26,11 @@ export const fetchStream = id => async dispatch => {
   dispatch({ type: 'FETCH_STREAM', payload: response.data });
 };
 
+// PUT replaces all properties, PATCH just a selected few
 export const editStream = (id, formUserInput) => async dispatch => {
-  const response = await axios.put(`http://localhost:3001/streams/${id}`, formUserInput);
+  const response = await axios.patch(`http://localhost:3001/streams/${id}`, formUserInput);
   dispatch({ type: 'EDIT_STREAM', payload: response.data });
+  history.push('/');
 };
 
 export const deleteStream = id => async dispatch => {

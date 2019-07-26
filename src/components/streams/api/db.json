@@ -22,7 +22,7 @@
       "id": 4
     },
     {
-      "title": "Java stream",
+      "title": "Java EE stream",
       "description": "Come and pick up skills",
       "userId": "115859590794203743556",
       "id": 5
@@ -40,9 +40,8 @@
       "id": 7
     },
     {
-      "title": "I am streaming manga",
-      "description": "Watch sexy stuff tonight",
-      "userId": "115859590794203743556",
+      "title": "Manga night",
+      "description": "Watch sexy stuff tonight with me",
       "id": 8
     }
   ]
