@@ -18,7 +18,7 @@ class StreamList extends React.Component {
             {strm.title}
             <div className='description'>{strm.description}</div>
           </div>
-
+          
         </div>
       );
     });
