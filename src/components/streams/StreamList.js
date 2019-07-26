@@ -18,7 +18,7 @@ class StreamList extends React.Component {
             {strm.title}
             <div className='description'>{strm.description}</div>
           </div>
-          
+
         </div>
       );
     });
@@ -40,6 +40,7 @@ class StreamList extends React.Component {
       return (
         <div className='right floated content'>
           <Link className='ui button primary' to={`/streams/edit/${strm.id}`}>Edit</Link>
+          <Link className='ui button red' to={`/streams/delete/${strm.id}`}>Delete</Link>
 
         </div>
       )
