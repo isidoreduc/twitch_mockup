@@ -36,4 +36,5 @@ export const editStream = (id, formUserInput) => async dispatch => {
 export const deleteStream = id => async dispatch => {
   await axios.delete(`http://localhost:3001/streams/${id}`);
   dispatch({ type: 'DELETE_STREAM', payload: id });
+  history.push('/');
 };
