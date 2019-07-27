@@ -3,10 +3,11 @@ import Modal from '../Modal';
 
 const StreamDelete = () => {
   const actions = (
-    <div>
+    // Fragment is used when we want to create a multi element jsx element without producing efects on the DOM as in the case of using a div tag for example
+    <React.Fragment>
       <button className='ui button negative'>Delete</button>
       <button className='ui button'>Cancel</button>
-    </div>
+    </React.Fragment>
   );
 
   return (
