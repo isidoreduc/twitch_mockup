@@ -15,10 +15,11 @@ class StreamList extends React.Component {
           {this.renderAdminFunctionality(strm)}
           <i className='large middle aligned icon camera' />
           <div className='content'>
-            {strm.title}
+            <Link to={`streams/${strm.id}`} className='header'>
+              {strm.title}
+            </Link>
             <div className='description'>{strm.description}</div>
           </div>
-
         </div>
       );
     });
